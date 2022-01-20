@@ -8,7 +8,7 @@ const forecast = (latitude,longtitude,callback)=> {
             callback('Unable to find coodinates :(',undefined)
         }
         else {
-            callback(undefined,body.current.weather_description[0]+' The temprature of '+ body.location.name+' is '+body.current.temperature+' and the chances of rain are '+body.current.precip+'%' + 'Wind Speed is '+body.current.wind_speed+' and humidity percentage is' + body.current.humidity);
+            callback(undefined,'Its ' + body.current.weather_descriptions[0] + ' Today ' +' The temprature of '+ body.location.name+' is '+body.current.temperature+' and the chances of rain are  '+body.current.precip+'%' + ' Wind Speed is '+body.current.wind_speed+' and humidity percentage is ' + body.current.humidity);
         }
     })
 }
