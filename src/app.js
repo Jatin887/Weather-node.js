@@ -5,8 +5,7 @@ const gecode = require('./utils/gecode')
 const forecast = require('./utils/forecast')
 const { title } = require('process')
 
-console.log(__dirname)
-// console.log(path.join(__dirname,'../public'))
+
 
 const app = express()
 const port = process.env.PORT || 3000
